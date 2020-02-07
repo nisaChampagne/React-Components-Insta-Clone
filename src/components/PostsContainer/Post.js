@@ -8,11 +8,9 @@ import PostHeader from "./PostHeader";
 import "./Posts.css";
 
 const Post = props => {
-  console.log(props, 'post props')
   // set up state for the likes
   const initialState = props.post.likes 
-  const [ up, setUp] = useState(initialState)
-  console.log(up, 'up')
+  const [ up] = useState(initialState)
 
   return (
     <div className="post-border">
